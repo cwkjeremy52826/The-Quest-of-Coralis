@@ -14,6 +14,9 @@ Horse = {"A" : "buy a horse",
 Bandits = {"A" : "run",
            "B" : "stay"}
 
+Bandits2 = {"A" : "drop your weapons and get off your horse",
+            "B" : "do nothing and stay where you are"}
+
 name = input('Hello! What is your name?\t')
 
 ans = input("Welcome to Coralis " + name + ", a world of magic and quests! Do you want to go on an adventure?! Y or N\t")
@@ -43,4 +46,4 @@ if ans.upper() == "Y":
   if d3 == "A":
       print("You are able to out run the men and get to safety. You made the right choice by " + Bandits[d3] + "ning. Those men were bandits who raid travelers every single day.\n")
   if d3 == "B":
-    print("As the riders near you recognize them for bandits.")
+    d4 = input("As the riders near you recognize them for bandits. The one at the front of the pack calls out to you saying to drop your weapons and get off your horse. Type A if you drop your weapons and get off or type B if you stay where you are.\n")
