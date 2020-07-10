@@ -8,6 +8,12 @@ Characters = {"A" : "Knight",
 Begin = {"A" : "begin your journey",
          "B" : "buy suplies"}
 
+Horse = {"A" : "buy a horse",
+         "B" : "save your gold"}
+
+Bandits = {"A" : "run",
+           "B" : "stay"}
+
 name = input('Hello! What is your name?\t')
 
 ans = input("Welcome to Coralis " + name + ", a world of magic and quests! Do you want to go on an adventure?! Y or N\t")
@@ -26,4 +32,15 @@ if ans.upper() == "Y":
   if d1 == "B":
     print("Alright! Let's go " + Begin[d1] + "!\n")
     print("Okay, you have bought a coin pouch, a satchel, climbing meterials, a cloak, a water flask, and the pitcher. This cost you 215 gold.")
-    d2 = input("But you have another decition to make. Would you like to but a horse for 200 gold. this")
+    d2 = input("But you have another decision to make. Would you like to buy a horse for 200 gold. This will reduce your travel time to the mountain by 1 1/2 days but you will not be able to bring it up the mountain. Type A if you would like to buy the horse and type B if you would like to save your gold.\n")
+    d2 = d2.upper()
+    if d2 == "A":
+      print("You have chosen to " + Horse[d2] + "! Now lets hit the road.\n")
+  print("You have left the city and all around you are green rolling hills. The journey goes quickly for the first day before you set up camp. You wake up the next morning and immediately hit the road again, but as you travel a thundering noise reaches your ears. As the sound gets louder you see 4 men clad in black riding towards you on scrawny looking horses, weapons raised.")
+  if d2 == "A":
+    d3 = input('Do you try to out run them on your horse or do you stay and see who those riders are? Type A if you want to run or type b if you want to stay.\n')
+    d3 = d3.upper()
+  else:
+    print("You know you have no chance of running so you stop walking and turn towards the riders.")
+  if d3 == "A":
+      print("You made the right choice by " + Bandits[d3] + "ning. Those men were bandits who raid travelers every single day.")
