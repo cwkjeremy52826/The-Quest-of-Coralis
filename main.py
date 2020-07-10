@@ -41,6 +41,6 @@ if ans.upper() == "Y":
     d3 = input('Do you try to out run them on your horse or do you stay and see who those riders are? Type A if you want to run or type b if you want to stay.\n')
     d3 = d3.upper()
   else:
-    print("You know you have no chance of running so you stop walking and turn towards the riders.")
+    print("You know you have no chance of running so you stop walking and turn towards the riders. As they near you recognize them for bandits")
   if d3 == "A":
-      print("You made the right choice by " + Bandits[d3] + "ning. Those men were bandits who raid travelers every single day.")
+      print("You are able to out run the men and get to safety. You made the right choice by " + Bandits[d3] + "ning. Those men were bandits who raid travelers every single day.")
